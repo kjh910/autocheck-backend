@@ -3,19 +3,15 @@ const nextConfig = {
     async headers() {
         return [
           {
-            source: '/api/:path*', // CORS 설정을 적용하고자 하는 API 라우트의 경로
-            headers: [
-              {
-                key: 'Access-Control-Allow-Origin',
-                value: '*', // 허용하고자 하는 도메인을 여기에 입력
-              },
-              {
-                key: 'Access-Control-Allow-Methods',
-                value: 'GET, POST, PUT, DELETE', // 허용하고자 하는 HTTP 메서드
-              },
-            ],
-          },
-        ];
+            "source": "/(.*)",
+            "headers": [
+              { "key": "Access-Control-Allow-Credentials", "value": "true" },
+              { "key": "Access-Control-Allow-Origin", "value": "*" },
+              { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+              { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
+            ]
+          }
+        ]
       },
 }
 
