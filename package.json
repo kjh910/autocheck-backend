@@ -1,0 +1,32 @@
+{
+  "name": "autocheck-backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=3001 next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.10",
+    "moment": "^2.29.4",
+    "momentjs": "^2.0.0",
+    "next": "13.4.10",
+    "nodemailer": "^6.9.4",
+    "postcss": "8.4.26",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.2",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6",
+    "@types/nodemailer": "^6.4.8"
+  }
+}
