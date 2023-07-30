@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    serverRuntimeConfig: {
+        stop: '0',
+        send: '0',
+    },
     async headers() {
         return [
           {
